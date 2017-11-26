@@ -1,0 +1,8 @@
+{
+  "products" : "PRODUCTS",
+  "projects" : "PROJECTS",
+  "services" : "SERVICES",
+  "contact" : "CONTACT",
+  "login" : "LOGIN",
+  "register": "REGISTER"
+}

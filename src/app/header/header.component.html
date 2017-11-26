@@ -1,3 +1,30 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img width=50 height=50 src="assets/somer.svg" style="float:left;">
+      <a href="#" class="navbar-brand">SOMER</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#"> {{ "products" | translate }}</a></li>
+        <li><a href="#">{{ "projects" | translate }}</a></li>
+        <li><a href="#">{{ "services" | translate }}</a></li>
+        <li><a href="#">{{ "contact" | translate }}</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">{{ "login" | translate }}</a></li>
+        <li><a href="#">{{ "register" | translate }}</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" role="button">Menu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </li>
+        <li><a href="#" (click)="changeLang('en')">EN</a></li>
+        <li><a href="#" (click)="changeLang('es')">ES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
